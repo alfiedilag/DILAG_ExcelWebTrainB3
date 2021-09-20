@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FontAwesome Site Icons for SocMed Icons-->
+    <script src="https://kit.fontawesome.com/7c04fe9cbf.js" crossorigin="anonymous"></script>
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Day7_DatePicker</title>
+
+</head>
+<body class="grey darken-4">
+    <div class="container">
+        <h1 class="yellow-text accent-3">Form2_PICKER</h1>
+
+        <!--Switch-->
+        <h4 class="white-text">SWITCH</h4>
+        <form action="#">
+            <div class="switch">
+                <label>
+                    Disable
+                    <input type="checkbox" checked>
+                    <span class="lever"></span>
+                    Enable
+                </label>
+            </div>
+            <br>
+            <br>
+            
+            <div class="switch">
+                <label>
+                    Disable
+                    <input type="checkbox" disabled>
+                    <span class="lever"></span>
+                    Enable
+                </label>
+            </div>
+            <br>
+            </br>
+
+            <!--File Input-->
+            <h4 class="white-text">FILE UPLOAD</h4>
+            <div class="file-field input-field">
+                <div class="btn">
+                    <span>Upload File</span>
+                    <input type="file">
+                </div>
+                <div class="file-path wrapper">
+                    <input type="text" class="file-path">
+                </div>
+            </div>
+            <br>
+            <br>
+            
+            <!--Range Slider-->
+            <h4 class="white-text">RANGE SLIDER</h4>
+            <p class="range-field">
+                <input type="range" min="0" max="100">
+                <label>Range Slider</label>
+            </p>
+            <br>
+            <br>
+            
+            <!--Date Picker-->
+            <h4 class="white-text">DATE PICKER</h4>
+            <input type="text" class="datepicker">
+                <label>Date</label>
+            <br>
+            <br>
+
+            <!--Time Picker-->
+            <h4 class="white-text">TIME PICKER</h4>
+            <input type="text" class="timepicker">
+                <label>Time</label>
+
+            <!--POST -->
+            <h4 class="white-text">MESSAGE/COMMENTS</h4>
+            <div class="input-field">
+                <input class="white-text" type="text" id="post" data-length="10">
+                <label for="post">Post</label>
+            </div>
+        </form>
+    </div>
+
+
+<div style="height: 1000px;"></div>
+
+<!-- JQuery CDN from JquerySite Minified -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>    
+
+<script>
+    $(document).ready(function(){
+    $('.datepicker').datepicker()
+    $('.timepicker').timepicker()
+});
+</script>
+
+</body>
+</html>

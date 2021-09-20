@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FontAwesome Site Icons for SocMed Icons-->
+    <script src="https://kit.fontawesome.com/7c04fe9cbf.js" crossorigin="anonymous"></script>
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Day6_Preloaders</title>
+
+
+    <!--Internal CSS-->
+        <style>
+            .indeterminate::after{
+                background: rgb(38, 175, 213) !important;    
+            }
+        </style>
+
+</head>
+<body class="black">
+    <div class="container">
+        <h1 class="yellow-text center-align">PRELOADERS</h1>
+        <br>
+        <br>
+
+        <!--LLinear Loader-->
+        <h1 class="green-text center-align">LINEAR PRELOADER</h1>
+        <div class="row">
+            
+            <!--Determinate Progress-->
+            <div class="col s12 m6">
+                <h3 class="blue-text center-align">DETERMINATE PROGRESS</h3>
+                <div class="progress">
+                    <div class="determinate green" style="width: 50%;">
+                    </div>
+                </div>
+            </div>
+
+            <!--Indetreminate Progress-->
+            <div class="col s12 m6">
+                <h3 class=" light-green-text accent-2 center-align">INDETERMINATE PROGRESS</h3>
+                <div class="progress">
+                    <div class="indeterminate orange"></div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <!--Circular Preloaders-->
+        <h1 class="cyan-text center-align">CIRCULAR PRELOADER</h1>
+        <div class="row">
+            <div class="col s12 m6 center-align">
+                <div class="preloader-wrapper big active">
+                    <div class="spinner-layer spinner-cyan-only">
+                        <div class="circle-clipper left">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="gap-patch">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="circle-clipper right">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6 center-align">
+                <div class="preloader-wrapper active">
+                    <div class="spinner-layer spinner-yellow-only">
+                        <div class="circle-clipper left">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="gap-patch">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="circle-clipper right">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <!--Circular Flashing Preloaders-->
+        <h3 class="yellow-text accent-1 center-align">CIRCULAR FLASHING COLOR PRELOADER</h3>
+        <div class="center-align">
+            <div class="preloader-wrapper big active">
+                <div class="spinner-layer spinner-blue">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+
+                <div class="spinner-layer spinner-red">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+
+                <div class="spinner-layer spinner-yellow">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+
+                <div class="spinner-layer spinner-green">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div style="height: 1000px;"></div>
+
+
+<!-- JQuery CDN from JquerySite Minified -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>  
+
+<script>
+    $(document).ready(function(){
+        $('.tabs').tabs();
+    })
+</script>
+    
+</body>
+</html>
